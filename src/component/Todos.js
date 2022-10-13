@@ -7,7 +7,7 @@ export const Todos = (props) => {
         <h3>TODO's</h3>
 
         {props.todos.map((todo) => (
-          <div key={todo.id} className="wrap">
+          <div key={todo.id}>
             <p className="todo">
               {todo.name}
               <button onClick={() => props.DeleteTodo(todo.id)}>X</button>

@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <Input GetValue={GetValue} GetTodos={GetTodos} />
+      <Input todos={todos} GetValue={GetValue} GetTodos={GetTodos} />
       <Todos todos={todos} DeleteTodo={DeleteTodo} />
     </div>
   );
